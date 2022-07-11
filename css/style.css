@@ -1,0 +1,72 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+body, section {
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;
+  
+}
+
+body {  
+  font-size: 15px;
+  background: hsl(212, 45%, 89%);  
+  font-family: Outfit, Arial, Helvetica, sans-serif;
+  justify-content: center;
+}
+
+h1, p {
+  text-align: center;
+}
+
+h1 {
+  color: hsl(218, 44%, 22%);
+  font-weight: 700;
+}
+
+p {
+  color: hsl(220, 15%, 55%);
+  font-weight: 400;
+  width: 90%;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+section {    
+  background: hsl(0, 0%, 100%);
+  width: 310px;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 10% 0 0 0;
+}
+
+img {
+  width: 100%;
+  border-radius: 15px;  
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 375px) {
+  section, .attribution {
+    min-width: 310px;
+  }
+}
